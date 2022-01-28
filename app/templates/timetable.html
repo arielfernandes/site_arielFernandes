@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{% block content %}
+<div class="content-container">
+  <div class="container-fluid">
+  <h1>{% block title %}Horário Monitoria{% endblock %}</h1>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Segunda</th>
+          <th scope="col">Terça</th>
+          <th scope="col">Quarta</th>
+          <th scope="col">Quinta</th>
+          <th scope="col">Sexta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Manhã</th>
+          <td>---</td> <!--HR segunda-->
+          <td>8:00h às 11:00h (ALN|PcD)</td> <!--HR terça-->
+          <td>9:00h às 12:00h </td> <!--HR quarta-->
+          <td> 9:00h às 12:00h</td> <!--HR quinta-->
+          <td>8:00h às 11:00h (ALN|PcD)</td> <!--HR sexta-->
+        </tr>
+        <tr>
+          <th scope="row">Tarde</th>
+          <td> 15:40h às 18:40h</td> <!--HR segunda-->
+          <td>17:40h às 18:40h</td> <!--HR terça-->
+          <td>17:40h às 18:40h</td> <!--HR quarta-->
+          <td>17:40h às 18:40h</td> <!--HR quinta-->
+          <td>17:40h às 18:40h</td> <!--HR sexta-->
+        </tr>
+        <tr>
+          <th scope="row">Noite</th>
+          <td>18:40h às 19:40h</td> <!--HR segunda-->
+          <td>---</td> <!--HR terça-->
+          <td>---</td> <!--HR quarta-->
+          <td>---</td> <!--HR quinta-->
+          <td>---</td> <!--HR sexta-->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

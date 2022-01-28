@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="content-container">
+    <div class="container-fluid">
+        <h1>{% block title %} Introdução ao C++ {% endblock %}</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="container">
+                    {{ md_text | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
